@@ -5,7 +5,8 @@ int main() {
 	int bb[] = {100, 200, 300, 400};
 	int cc[4] = {100, 200};
 	int dd[4] = {0};
-	int ee[4];
+	int ee[4] = {};
+	int ff[4];
 	int i;
 
 	for (i = 0; i<=3; i++)
@@ -26,6 +27,10 @@ int main() {
 
 	for (i = 0; i<=3; i++)
 		printf("ee[%d]==>%d\t", i, ee[i]);
+	printf("\n");
+
+	for (i = 0; i<=3; i++)
+		printf("ff[%d]==>%d\t", i, ff[i]);
 	printf("\n");
 
 	return 0;
