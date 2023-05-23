@@ -2,30 +2,29 @@
 
 int main()
 {
-    FILE *wfp;
+	FILE *wfp;
 
-    wfp = fopen("gugu.txt", "w");
+	wfp = fopen("gugu.txt", "w");
 
-    int i;
-    
-    for (i = 2; i < 10; i++)
-    {
-	fprintf(wfp,"#ì œ%dë‹¨# ", i);
-    }
+	int i, j;
 
-
-    for (i = 1; i < 10; i++)
-    {
-	fprintf(wfp, "\n");
-	for (int j = 2; j < 10; j++)
+	for (i = 2; i < 10; i++)
 	{
-	    fprintf(wfp, "%dX %d=%2d ", j, i, j * i);
+		fprintf(wfp, "#Á¦%d´Ü# ", i);
 	}
-    }
 
-    fprintf(wfp, "\n");
+	for (i = 1; i < 10; i++)
+	{
+		fprintf(wfp, "\n");
+		for (j = 2; j < 10; j++)
+		{
+			fprintf(wfp, "%dX %d=%2d ", j, i, j * i);
+		}
+	}
 
-    fclose(wfp);
+	fprintf(wfp, "\n");
 
-    return 0;
+	fclose(wfp);
+
+	return 0;
 }
